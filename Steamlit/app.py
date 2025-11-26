@@ -14,6 +14,7 @@ user_guess = int(st.number_input('Enter your guess:', min_value=1, max_value=100
 
 if user_guess == st.session_state.number_to_guess:
     st.success('You guessed correctly!')
+    st.balloons()
 elif user_guess < st.session_state.number_to_guess:
     st.info('Your guess is too low.')
 else:
