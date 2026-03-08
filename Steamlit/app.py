@@ -19,3 +19,6 @@ elif user_guess < st.session_state.number_to_guess:
     st.info('Your guess is too low.')
 else:
     st.info('Your guess is too high.')
+
+with st.expander('See the code'):
+    st.write("Fresh the page to try again!")
